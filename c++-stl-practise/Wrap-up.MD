@@ -1,5 +1,5 @@
 # Wrap - Up
-### Containers
+## Containers
 Sequence containers, Associated containers- [ordered and unordered]<br>
 Sequence containers have storage of data elements, Associated containers have pair of <key,actual value><br>
 Sequence - vector, stacks, queue, dicts, arrays, lists<br>
@@ -7,7 +7,17 @@ Associative  - ordered - underlying implementation Balanced Binary search tree, 
 Associative - ordered set, map, multi set, multi map<br>
 Associative - unordered - underlying implementation Hash Tables -unordered set, unordered map, unordered multi-set, unordered multi map
 
-### Iterators
+### Vector
+** Functions ** 
++ ```size(), capacity(), max_size()```
++ ```[], at()``` at() has bound check while [] doesnt have bound checks
++ ```shrink_to_fit()```
++ ```empty()``` returns if the vector is empty or not
++ ```begin(), end(), rbegin(), rend()``` iterators
++ ```insert(), erase()```
++ ```push_back(), pop_back()```
+
+## Iterators
 1. Input Iterators
     - Only able to read (Can be dereferenced (*it or it->val)) and not modify/assign
     - Unidirectional (forward)
@@ -30,5 +40,7 @@ Associative - unordered - underlying implementation Hash Tables -unordered set, 
     - All capabilities of Forward Iterators + Backward Traversal
 5. Random Access Iterators
     - All capabilities of Bidirectional and random access by indexing
-    
+
+
+
  
