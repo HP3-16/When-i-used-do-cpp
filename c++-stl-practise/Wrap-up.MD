@@ -8,7 +8,7 @@ Associative - ordered set, map, multi set, multi map<br>
 Associative - unordered - underlying implementation Hash Tables -unordered set, unordered map, unordered multi-set, unordered multi map
 
 ### Vector
-** Functions ** 
+**Functions** 
 + ```size(), capacity(), max_size()```
 + ```[], at()``` at() has bound check while [] doesnt have bound checks
 + ```shrink_to_fit()```
@@ -16,6 +16,17 @@ Associative - unordered - underlying implementation Hash Tables -unordered set, 
 + ```begin(), end(), rbegin(), rend()``` iterators
 + ```insert(), erase()```
 + ```push_back(), pop_back()```
+### List
+> Non contagious - doesn't support random access - rapid insertion deletion
+**Functions**
++ ```size(), max_size()```
++ ```=```
++ ```front(), back()```
++ ```empty()```
++ ```begin(), end(), rbegin(), rend()``` iterators
++ ```insert(), erase(), remove()``` remove takes element as parameter
++ ```clear()```
++ ```push_back(), pop_back(), push_front(), pop_front()```
 
 ## Iterators
 1. Input Iterators
