@@ -38,9 +38,7 @@ for(auto it = dummy.begin();it<dummy.end();it++)
     cout<<*it;
 // for each
 
-
-
-
-
+for(auto ch:dummy)
+    cout<<ch<<"_";
 
 }
