@@ -3,6 +3,16 @@
 using namespace std;
 // arr = [1 2 3 4 5 6 7]
 // 
+int storeOcc(int *arr, int i, int n, int key,int *out, int j){
+    if(i==n)
+        return j;
+    
+    if(arr[i] == key){
+        out[j] = i;
+        return storeOcc(arr,i+1,n,key,out,j+1);
+    }
+    return storeOcc(arr,i+1,n,key,out,j);
+}
 int firstOcc(int *arr, int size, int key){
 if(size==0){
     return -1;
