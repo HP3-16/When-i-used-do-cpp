@@ -48,7 +48,7 @@ return (c1+c2+c3);
 
 }
 int main(){
-    int arr[] = {1,5,2,6,3,0};
+    int arr[] = {0,2,3,1};
     int size = sizeof(arr)/sizeof(int);
     cout<<inversion_count(arr,0,size-1);
 }
