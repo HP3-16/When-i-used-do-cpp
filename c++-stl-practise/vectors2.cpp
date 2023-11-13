@@ -18,6 +18,19 @@ int main(){
         cout<<*it<<" ";
     // compare arrays
     cout<<((v1==v2)?"True":"False");
+    cout<<endl;
+
+    // checks
+    vector<bool> v3;
+    for(int i=0;i<5;i++)
+        v3.push_back(true);
+    cout<<((v3 == vector<bool> (5,true))?"True":"False")<<endl;
+
+    // other funs
+    v3.clear();
+    cout<<v3.size()<<endl;
+
+    cout<<v3.empty();
     return 0;
 
 }
