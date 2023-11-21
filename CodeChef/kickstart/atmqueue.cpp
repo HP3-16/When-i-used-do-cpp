@@ -30,7 +30,7 @@ while(tc--){
     
     for(ll i = 0;i<n;i++){
         cin>>arr[i];
-        mp[arr[i]/x].push_back(i+1);
+        mp[(arr[i]+x-1)/x].push_back(i+1);
     }
     cout<<"Case #"<<(tc+1)<<": ";
     for(pair<ll,vector<ll>> p : mp ){
