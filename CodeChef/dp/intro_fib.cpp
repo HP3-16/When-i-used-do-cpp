@@ -18,7 +18,7 @@ ll fib_rec(int n){
 }
 ll fib_dp(int n){
     /*
-    Memoization
+    Memoization top down
     */
     if(n<2)
         return n;
@@ -36,6 +36,7 @@ ll fib_dp_1(int n){
     return cache[n];
 }
 vector<ll> f(100,0);
+
 ll push_dp_fib(int n){
     f[0] = 0;
     f[1] = 1;
