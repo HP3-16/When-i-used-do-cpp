@@ -35,6 +35,22 @@ while(right<s.length()){
 }
 
 }
+int lengthOfLongestSubstring_v2(string s){
+    int end = 0;
+    int max_len = INT_MIN;
+    set<char> st;
+    st.insert(s[0]);
+    for(int start = 0;start<s.length();++start){
+        while(end+1<s.length() && !st.count(s[end+1])){
+            end++;
+            st.insert(s[end]);
+        }
+        max_len = max(max_len,end-start+1);  
+        st.erase(s[start]);
+    }
+
+    return (max_len == INT_MIN)?0:max_len;
+}
 int main(){
     file_i_o();
     string s;
